@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Toggle dark/ Light Mode</h1>
+        <p>Click the button to toggle between dark and light mode for the page</p>
+        <button id="toggle">Toggle dark mode</button>
+    </div>
+</body>
+<script>
+let container = document.querySelector("#container");
+let toggle = document.querySelector("#toggle");
+toggle.addEventListener("click", () =>{
+   if(container.style.backgroundColor === "white"){
+    container.style.backgroundColor = "black";
+    container.style.color = "white";
+    
+   }else{
+    container.style.backgroundColor = "white";
+    container.style.color = "black";
+
+   }
+
+})
+</script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        width: 600px;
+        height: 400px;
+        background-color: gray;
+        color: black;
+        border: 1px solid ; 
+        }   
+        h1{
+            text-align: left;
+        }
+        #openModal{
+            color: green;
+            text-align: end;
+        }
+        h2{
+            text-align: center;
+        }
+        #text{          
+            width: 400px;
+            height: 150px;
+            background-color: blue;
+            color: white;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+        #closeModal{
+            margin-top: 0;
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <h1>Modal Example</h1>
+        <button id="openModal">Open Modal</button>
+        <div id="text">
+            <button id="closeModal">x</button>
+            <h2>Some text in the Modal</h2>
+            
+        </div>
+    </div>
+
+</body>
+<script>
+    let container = document.querySelector(".container");
+    let openModal = document.querySelector("#openModal");
+    let text = document.querySelector("#text");
+    let closeModal = document.querySelector("#closeModal");
+    openModal.addEventListener("click", () => {
+        text.style.display = "block";
+    })
+    closeModal.addEventListener("click", () => {
+        text.style.display = "none";
+    })
+</script>
+</html>

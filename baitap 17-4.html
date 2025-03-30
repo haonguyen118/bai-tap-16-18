@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            border: 1px solid black;
+            width: 600px;
+            height: 300px;
+        }
+        #parrent{
+            display: flex;
+            justify-content: space-around;
+        }
+        #yellow{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        #green{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 1px solid black;
+        }
+        #gray{
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Change background color</h1>
+        <p>Mouse over the square</p>
+        <div id="parrent">
+        <div id="yellow"></div>
+        <div id="green"></div>
+        <div id="gray"></div>
+    </div>
+    </div>
+</body>
+<script>
+    let container = document.querySelector("#container");
+    let parrent = document.querySelector("#parrent");
+    let yellow = document.querySelector("#yellow");
+    let green = document.querySelector("#green");
+    let gray = document.querySelector("#gray");
+    yellow.addEventListener("mouseover", () => {
+        container.style.backgroundColor = "yellow";
+    })
+    green.addEventListener("mouseover", () => {
+        container.style.backgroundColor = "green";
+    })
+    gray.addEventListener("mouseover", () => {
+        container.style.backgroundColor = "gray";
+    })
+
+</script>
+</html>
