@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let input = prompt(` Moi nhap vao mot day ky tu bat ky: `);
+    let isPalindrome = true;
+    for (let i = 0; i < input.length / 2; i++){
+        if(input.charAt(i) !== (input.length-1).charAt){
+            isPalindrome = false;
+            break;
+        }
+    }
+    if(isPalindrome){
+        alert("Is Palindrome!");
+    }else{
+        alert("Is not Palindrome!");
+    }
+</script>
+</html>
