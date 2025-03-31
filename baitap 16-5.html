@@ -12,7 +12,7 @@
     let input = prompt(` Moi nhap vao mot day ky tu bat ky: `);
     let isPalindrome = true;
     for (let i = 0; i < input.length / 2; i++){
-        if(input.charAt(i) !== (input.length-1).charAt){
+        if(input.charAt(i) !== input.charAt(input.length-1-i).){
             isPalindrome = false;
             break;
         }
