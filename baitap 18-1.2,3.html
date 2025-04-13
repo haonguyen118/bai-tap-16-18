@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(id, name, gender, age, mark){
+            this.id = id,
+                this.name = name,
+                this.gender = gender,
+                this.age = age,
+                this.mark = mark
+            }
+        }
+        
+        let newStudent1 = new Student(1, "Nguyen Van A", "male", 20, 9);
+        let newStudent2 = new Student(2, "Nguyen Van B", "male", 18, 2);
+        let newStudent3 = new Student(3, "Nguyen Van C", "male", 26, 8);
+        let newStudent4 = new Student(4,"Nguyen Van D", "male", 30, 6);
+        let students = [newStudent1,newStudent2,newStudent3,newStudent4];
+        console.log(students);
+        
+       
+        let maxMark = students[0].mark;
+        let index = 0;
+        for(let i = 1; i < students.length; i++){
+           
+            if(students[i].mark > maxMark){
+                maxMark = students[i].mark;
+                index = i;
+            }
+            
+        }
+
+        console.log(students[index]);
+
+    </script>
+</body>
+</html>

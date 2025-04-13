@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        let products = [
+         { id: 1, name: `Milk`, count: 100 },
+         { id: 2, name: `Orange`, count: 100 },
+         { id: 3, name: `Butter`, count: 100 },
+        ];
+        console.log(products);
+        
+        // bai 2: xoa doi tuong co id 2
+        for( let i = 0; i < products.length; i++){
+            if(products[i].id === 2){
+                products.splice(i,1);
+                
+                break;
+            }   
+            console.log(products);
+        
+            }
+           
+            
+        let products2 = [];
+        for(let i = 0; i < products.length; i++){
+            products2.push({...products[i]});
+        }
+        for(let i = 0; i < products2.length; i++){
+            if(products2[i].id === 3){
+                products2[i].count = 0;
+            }
+        }
+        console.log(products2);
+        
+    </Script>
+</body>
+</html>
